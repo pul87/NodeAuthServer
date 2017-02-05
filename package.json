@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/pul87/NodeAuthServer",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.16.0",
     "express": "^4.14.1",
     "mongoose": "^4.8.1",

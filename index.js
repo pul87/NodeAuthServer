@@ -3,6 +3,11 @@ const http        = require('http');
 const bodyParser  = require('body-parser');
 const morgan      = require('morgan');
 const router      = require('./router');
+const mongoose    = require('mongoose');
+const config      = require('./config');
+
+// DB SETTINGS
+mongoose.connect(config.MONGO.URL);
 
 // APP SETTINGS
 const app = express();

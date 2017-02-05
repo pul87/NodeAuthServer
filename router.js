@@ -1,7 +1,6 @@
+const Authentication = require('./controllers/authentication');
+const util = require('util');
+
 module.exports = function(app) {
-
-  app.get('/', (req, res, next) => {
-    res.json(['uno', 'due', 'tre']);
-  });
-
+  app.post('/signup', Authentication.signup);
 };
